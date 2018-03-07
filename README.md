@@ -14,9 +14,7 @@ Summary: A little word cloud generator in Python
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/wordcloud-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/wordcloud-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/wordcloud-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/wordcloud-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/wordcloud-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/wordcloud-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/wordcloud-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/wordcloud-feedstock)
 
 Current release info
 ====================
