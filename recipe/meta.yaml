@@ -8,6 +8,9 @@ source:
     url: https://github.com/amueller/word_cloud/archive/{{ version }}.tar.gz
     fn: wordcloud-{{ version }}.tar.gz
     sha256: a285e0fcb0149cbb2e23516cfff5df79adf525e5efcc4a4a5e1faf9032f67477
+    patches:
+        # TODO Remove when 1.4.1 is out
+        - remove_relative_import.patch
 
 build:
     number: 0

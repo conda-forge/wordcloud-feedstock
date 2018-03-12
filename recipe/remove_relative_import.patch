@@ -1,0 +1,13 @@
+diff --git a/wordcloud/wordcloud_cli.py b/wordcloud/wordcloud_cli.py
+index 2e400b1..1016da4 100644
+--- a/wordcloud/wordcloud_cli.py
++++ b/wordcloud/wordcloud_cli.py
+@@ -14,7 +14,7 @@ import wordcloud as wc
+ import numpy as np
+ from PIL import Image
+ 
+-from . import __version__
++from wordcloud import __version__
+ 
+ 
+ class FileType(object):
