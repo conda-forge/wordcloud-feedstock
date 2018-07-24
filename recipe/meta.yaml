@@ -1,4 +1,4 @@
-{% set version = "1.4.1" %}
+{% set version = "1.4.2" %}
 
 package:
     name: wordcloud
@@ -7,7 +7,7 @@ package:
 source:
     url: https://github.com/amueller/word_cloud/archive/{{ version }}.tar.gz
     fn: wordcloud-{{ version }}.tar.gz
-    sha256: bb1da374261919600b29746af6668fd90722ac15a564226bde42a236bba07588
+    sha256: 192ea485f91a5de352acc9d94edec602e6407960034d95e7e250ba58cb1854b7
 
 build:
     number: 0
