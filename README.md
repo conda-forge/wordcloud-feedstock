@@ -14,14 +14,16 @@ Summary: A little word cloud generator in Python
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/wordcloud-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/wordcloud-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/wordcloud-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/wordcloud-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/wordcloud-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/wordcloud-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/wordcloud-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/wordcloud-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/wordcloud-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/wordcloud-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/wordcloud-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/wordcloud-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/wordcloud/badges/version.svg)](https://anaconda.org/conda-forge/wordcloud)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/wordcloud/badges/downloads.svg)](https://anaconda.org/conda-forge/wordcloud)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-wordcloud-green.svg)](https://anaconda.org/conda-forge/wordcloud) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/wordcloud.svg)](https://anaconda.org/conda-forge/wordcloud) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/wordcloud.svg)](https://anaconda.org/conda-forge/wordcloud) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/wordcloud.svg)](https://anaconda.org/conda-forge/wordcloud) |
 
 Installing wordcloud
 ====================
