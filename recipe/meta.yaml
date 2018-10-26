@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/w/wordcloud/wordcloud-{{ version }}.tar.gz
-  sha256: 118ef31e51ea602d5f0246fd940757e8480d40194f8fb88bfd07e94fcb8babc8
+  sha256: 6ceed30c943b49e8e8b222a4d5a6725bbeca180fada7a04c4121ed238d6896e6
 
 build:
   number: 1000
