@@ -1,42 +1,42 @@
-{% set version = "1.4.1" %}
+{% set version = "1.5.0" %}
 
 package:
-    name: wordcloud
-    version: {{ version }}
+  name: wordcloud
+  version: {{ version }}
 
 source:
-    url: https://github.com/amueller/word_cloud/archive/{{ version }}.tar.gz
-    fn: wordcloud-{{ version }}.tar.gz
-    sha256: bb1da374261919600b29746af6668fd90722ac15a564226bde42a236bba07588
+  url: https://pypi.io/packages/source/w/wordcloud/wordcloud-{{ version }}.tar.gz
+  sha256: 118ef31e51ea602d5f0246fd940757e8480d40194f8fb88bfd07e94fcb8babc8
 
 build:
-    number: 1000
-    script: python -m pip install --no-deps --ignore-installed .
+  number: 1000
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
 
 requirements:
-    build:
-        - {{ compiler('c') }}
-        - {{ compiler('cxx') }}
-    host:
-        - python
-        - pip
-    run:
-        - python
-        - pillow
-        - numpy
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - python
+    - pip
+  run:
+    - python
+    - pillow
+    - numpy
 
 test:
-    imports:
-        - wordcloud
-    commands:
-        - wordcloud_cli.py -h
+  imports:
+    - wordcloud
+  commands:
+    - wordcloud_cli.py -h
 
 about:
-    home: https://github.com/amueller/word_cloud
-    license: MIT
-    summary: A little word cloud generator in Python
+  home: https://github.com/amueller/word_cloud
+  license: MIT
+  summary: A little word cloud generator in Python
 
 extra:
-    recipe-maintainers:
-        - amueller
-        - ericdill
+  recipe-maintainers:
+    - amueller
+    - ericdill
+    - ocefpaf
