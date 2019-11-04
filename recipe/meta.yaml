@@ -34,6 +34,7 @@ test:
 about:
   home: https://github.com/amueller/word_cloud
   license: MIT
+  license_file: LICENSE
   summary: A little word cloud generator in Python
 
 extra:
