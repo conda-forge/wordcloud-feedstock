@@ -10,7 +10,7 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
     - wordcloud_cli = wordcloud.__main__:main
 
@@ -23,7 +23,8 @@ requirements:
   run:
     - python
     - pillow
-    - numpy
+    - numpy >=1.6.1
+    - matplotlib-base
 
 test:
   imports:
@@ -35,7 +36,7 @@ about:
   home: https://github.com/amueller/word_cloud
   license: MIT
   license_file: LICENSE
-  summary: A little word cloud generator in Python
+  summary: "A little word cloud generator in Python"
 
 extra:
   recipe-maintainers:
