@@ -1,4 +1,4 @@
-{% set version = "1.7.0" %}
+{% set version = "1.8.0" %}
 
 package:
   name: wordcloud
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/w/wordcloud/wordcloud-{{ version }}.tar.gz
-  sha256: bad2b990350a869e6e35c05d292784b050da6068109068425961aad4ae4fefb2
+  sha256: 35563d96802d29c876ef8fd9e83304ef796cee40b2e51c0a7fa570d468073236
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - wordcloud_cli = wordcloud.__main__:main
