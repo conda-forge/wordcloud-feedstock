@@ -1,4 +1,4 @@
-{% set version = "1.8.0" %}
+{% set version = "1.8.1" %}
 
 package:
   name: wordcloud
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/w/wordcloud/wordcloud-{{ version }}.tar.gz
-  sha256: 35563d96802d29c876ef8fd9e83304ef796cee40b2e51c0a7fa570d468073236
+  sha256: e6ef771aac17c1cf8558c8d5ef025796184066d7b78f8118aefe011fb0d22952
 
 build:
   number: 0

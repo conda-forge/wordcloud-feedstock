@@ -5,11 +5,9 @@ Home: https://github.com/amueller/word_cloud
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/wordcloud-feedstock/blob/master/LICENSE.txt)
 
 Summary: A little word cloud generator in Python
-
-
 
 Current build status
 ====================
