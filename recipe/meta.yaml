@@ -11,8 +11,7 @@ source:
 build:
   number: 2
   script:
-    - cythonize --force wordcloud\query_integral_image.pyx  # [py>310 and win]
-    - "${BUILD_PREFIX}/bin/python -m Cython.Build.Cythonize --force wordcloud/query_integral_image.pyx"  # [py>310 and not win]
+    - {{ BUILD_PREFIX }}/bin/python -m Cython.Build.Cythonize --force wordcloud/query_integral_image.pyx  # [py>310]
     - {{ PYTHON }} -m pip install . -vv
   entry_points:
     - wordcloud_cli = wordcloud.__main__:main
