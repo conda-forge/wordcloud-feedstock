@@ -5,12 +5,14 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/w/wordcloud/wordcloud-{{ version }}.tar.gz
-  sha256: 523db887e47e840eb5c2e60428243bb1d7439fdc60f89626b17bafa1be64459c
+  url: https://github.com/amueller/word_cloud/archive/refs/tags/{{ version }}.tar.gz
+  sha256: 9c80c8ad279b7402e780d1ec03c5e2ee83a0192e61e76c23cc7f9306cc5b5012
 
 build:
   number: 2
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script:
+    - cythonize --force wordcloud/query_integral_image.pyx
+    - {{ PYTHON }} -m pip install . -vv
   entry_points:
     - wordcloud_cli = wordcloud.__main__:main
 
@@ -22,6 +24,7 @@ requirements:
   host:
     - python
     - pip
+    - cython
   run:
     - python
     - pillow
