@@ -24,7 +24,7 @@ requirements:
     - pip
     - cython >=0.29.33
   run:
-    - python
+    - python >=3.7
     - numpy >=1.6.1
     - pillow
     - matplotlib-base
