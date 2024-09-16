@@ -9,7 +9,7 @@ source:
   sha256: a9aa738d63ed674a40f0cc31adb83f4ca5fc195f03a6aff6e010d1f5807d1c58
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - wordcloud_cli = wordcloud.__main__:main
@@ -19,8 +19,10 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
+    - setuptools
     - pip
     - cython >=0.29.33
   run:
