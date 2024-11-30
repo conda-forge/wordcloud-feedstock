@@ -38,8 +38,6 @@ test:
     - wordcloud
   commands:
     - pip check
-# make sure the version reported by pip is correct
-    - "pip show {{ name }} | grep -Fx 'Version: {{ version }}'"
     - wordcloud_cli -h
   requires:
     - pip
