@@ -9,7 +9,7 @@ source:
   sha256: df17c468ff903bd0aba4f87c6540745d13a4931220dd4937cb363ad85a4771b9
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - wordcloud_cli = wordcloud.__main__:main
